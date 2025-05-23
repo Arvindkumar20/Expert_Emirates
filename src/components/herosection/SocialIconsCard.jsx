@@ -57,10 +57,9 @@ const SocialIconsCard = () => {
           ))}
         </div>
 
-
         {/* Border Highlight on Icon Hover */}
         <div className="absolute inset-0 border border-transparent group-hover:border-t-yellow-600 group-hover:border-l-yellow-700 group-hover:border-r-yellow-700 group-hover:border-b-yellow-600 rounded-2xl transition-all duration-500 pointer-events-none" />
-</div>
+      </div>
     </div>
   );
 };
