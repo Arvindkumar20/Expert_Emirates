@@ -11,12 +11,16 @@ const FollowUsSection = () => {
       <div className="bg-[#1b181f] rounded-2xl px-4 sm:px-6 md:px-8 py-8 sm:py-10 text-center w-full max-w-4xl">
         {/* Gradient Heading */}
         <h2 className="text-transparent bg-clip-text bg-gradient-to-t from-[#281000] via-[#FFE976] to-[#281000]
-                       text-[28px] sm:text-[36px] md:text-[44px] font-semibold leading-tight tracking-[0.12em] font-[Poppins]">
+                       text-[28px] sm:text-[36px] md:text-[44px] font-bold leading-relaxed tracking-widest font-[Poppins]"
+                       style={{
+                        fontFamily: 'Poppins',
+                       }}
+                       >
           Follow us
         </h2>
 
         {/* Subtext */}
-        <p className="text-sm sm:text-base text-gray-300 mt-3 sm:mt-4">
+        <p className="text-md sm:text-md text-gray-300 mt-3 sm:mt-4 leading-relaxed tracking-widest font-sans font-normal">
           Get market updates and exclusive trading tips on our <br className="hidden sm:inline" />
           social channels
         </p>
@@ -27,21 +31,21 @@ const FollowUsSection = () => {
             <img
               src={FacebookIcon}
               alt="Facebook"
-              className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform"
+              className="w-16 h-16 sm:w-14 sm:h-14 hover:scale-110 transition-transform"
             />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <img
               src={InstagramIcon}
               alt="Instagram"
-              className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform"
+              className="w-16 h-16 sm:w-14 sm:h-14 hover:scale-110 transition-transform"
             />
           </a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
             <img
               src={YouTubeIcon}
               alt="YouTube"
-              className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform"
+              className="w-16 h-16 sm:w-14 sm:h-14 hover:scale-110 transition-transform"
             />
           </a>
         </div>

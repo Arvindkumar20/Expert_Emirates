@@ -64,14 +64,14 @@ export default function PricingSection() {
         {plans.map((plan, idx) => (
           <div
             key={idx}
-            className="bg-[#121117] rounded-2xl p-8 w-full max-w-sm mx-auto shadow-lg flex flex-col justify-between"
+            className="group bg-[#121117] rounded-2xl p-8 w-full max-w-sm mx-auto shadow-lg flex flex-col justify-between"
           >
-            <div className="flex items-center gap-2 bg-[#1F1E25] text-white rounded-full px-4 py-2 w-max mb-6">
+            <div className="group-hover:text-yellow-500 flex items-center gap-2 bg-[#1F1E25]  rounded-full px-4 py-2 w-max mb-6">
               <img src={plan.icon} alt={`${plan.name} icon`} className="w-5 h-5" />
               <span className="text-sm font-semibold">{plan.name}</span>
             </div>
 
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-white group-hover:text-yellow-500">
               {plan.price}
               <span className="text-base font-normal ml-1">{plan.duration}</span>
             </h2>
@@ -79,7 +79,7 @@ export default function PricingSection() {
             <p className="text-sm text-gray-400 my-4">{plan.description}</p>
 
             <button
-              className="group w-[147px] h-[48px] px-[40px] py-[10px] text-yellow-500 font-bold text-sm bg-transparent mb-6 transition-all duration-300"
+              className="w-[147px] h-[48px] px-[40px] py-[10px] text-yellow-500 font-bold text-sm bg-transparent mb-6 transition-all duration-300"
               style={{
                 borderImage:
                   "linear-gradient(90deg, #281000 0%, #C0971C 25.5%, #FFE976 49.5%, #C0971C 74.5%, #281000 100%)",
