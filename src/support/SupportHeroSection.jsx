@@ -12,7 +12,7 @@ const SupportHeroSection = () => {
         className="object-cover mb-6"
       />
      </div>
-
+ 
       {/* Heading with gradient and bold white */}
       <h2 className="text-3xl md:text-3xl font-bold font-sans tracking-widest leading-loose -mt-16">
         <span className="text-transparent bg-clip-text bg-[linear-gradient(180deg,#281000_-59.46%,#C0971C_7.05%,#FFE976_69.64%,#C0971C_134.84%,#281000_201.35%)]">
