@@ -27,6 +27,9 @@ const FollowUsSection = () => {
           social channels
         </p>
 
+
+
+
         {/* Social Icons */}
         <div className="flex justify-center items-center space-x-6 mt-5 sm:mt-6">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
